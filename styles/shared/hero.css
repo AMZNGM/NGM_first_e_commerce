@@ -1,0 +1,39 @@
+aside ul {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  aside ul {
+    font-size: 14px;
+  }
+}
+.headerList {
+  padding: 11px;
+}
+.headerList:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.carousel {
+  height: auto;
+}
+.carousel h5 {
+  font-size: 48px;
+}
+.carousel .green {
+  color: var(--green-color);
+}
+.carousel button {
+  background-color: var(--green-color);
+  color: white;
+  width: fit-content;
+}
+.carousel .timer {
+  font-size: 10px;
+}
+.carousel-inner {
+  height: 350px;
+}
+.hero button:hover {
+  background-color: var(--green-color);
+  color: white;
+}

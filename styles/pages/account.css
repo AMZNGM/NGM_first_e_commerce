@@ -1,0 +1,40 @@
+.account-panel .btn-close-white {
+  color: black;
+  transition: 0.3s;
+}
+.account-panel .btn-close-white:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+.account-panel form input::placeholder {
+  color: #5252527f;
+}
+.js-deleteAddress:hover,
+.js-editAddress:hover {
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+.modal {
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+}
+.profile-photo-container {
+  width: 120px;
+  height: 120px;
+}
+.profile-photo {
+  transition: all 0.3s ease;
+}
+.profile-photo-container:hover .profile-photo {
+  transform: scale(1.05);
+}
+.profile-photo-overlay {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.profile-photo-container:hover .profile-photo-overlay {
+  opacity: 0.5;
+}
+.profile-photo-container.has-image .profile-photo-overlay {
+  display: none;
+}

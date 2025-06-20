@@ -1,0 +1,26 @@
+.badge {
+  padding: 0.5em 1em;
+  font-weight: 500;
+}
+.btn-outline-dark {
+  transition: all 0.3s ease;
+}
+.btn-outline-dark:hover {
+  transform: translateY(-1px);
+}
+.js-emptyState {
+  min-height: 300px;
+}
+.js-emptyState i {
+  color: #6c757d;
+}
+@media (max-width: 768px) {
+  .table-responsive {
+    margin: 0 -1rem;
+  }
+
+  .table th,
+  .table td {
+    white-space: nowrap;
+  }
+}

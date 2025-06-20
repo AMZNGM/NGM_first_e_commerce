@@ -1,0 +1,13 @@
+.panner p:first-child {
+  color: var(--green-color);
+}
+.panner h5 {
+  font-size: 48px;
+}
+.panner button {
+  background-color: var(--green-color);
+  color: white;
+}
+.panner .timer3 {
+  font-size: 10px;
+}

@@ -1,0 +1,51 @@
+.navbar {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--primary-color);
+  outline: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: rgba(219, 68, 68, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+nav .fa-user.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+}
+@media screen and (max-width: 9898px) {
+  nav .nav-item .active {
+    transform: translate(0, -2px);
+  }
+}
+.userDropdown {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18.9px);
+  -webkit-backdrop-filter: blur(18.9px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 14px;
+}
+.userDropdown a {
+  padding: 0;
+}
+.cartQuantity,
+.wishlistQuantity {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  pointer-events: none;
+}
+.nav-profile-img {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--primary-color);
+}
+.nav-profile-img:hover {
+  transform: scale(1.05);
+}

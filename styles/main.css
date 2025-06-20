@@ -1,0 +1,112 @@
+:root {
+  --primary-color: #db4444;
+  --green-color: #00ff66;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+}
+* {
+  scroll-behavior: smooth;
+}
+*:focus {
+  outline: none;
+}
+li {
+  list-style: none;
+}
+button {
+  border: none;
+}
+::placeholder {
+  color: #0000007f;
+}
+.pointer {
+  cursor: pointer;
+}
+.container,
+.container-fluid {
+  transition: 0.5s ease;
+}
+.overflow-x-auto {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.dropdown-menu li {
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dropdown-menu li:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.features svg {
+  border: 10px solid rgb(173, 173, 173);
+}
+.btn:hover {
+  border: 1px solid var(--green-color);
+  /* color: var(--green-color); */
+}
+.hov:hover {
+  background-color: rgba(196, 196, 196, 0.493);
+  border-radius: 4px;
+  transition: all 0.1s ease;
+}
+.hover-effect {
+  position: relative;
+  color: white;
+}
+.hover-effect::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #dc3545;
+  transition: width 0.3s ease;
+}
+.hover-effect:hover::after {
+  width: 100%;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+  color: #6c757d;
+  font-size: 1.2rem;
+  line-height: 1;
+  vertical-align: middle;
+}
+.account-panel .active,
+.account-panel .active a,
+.account-panel .nav-tabs .active,
+.account-panel .nav-tabs a:hover {
+  color: var(--primary-color);
+}
+.account-panel a {
+  color: rgba(0, 0, 0, 0.596);
+}
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
